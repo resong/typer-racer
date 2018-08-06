@@ -3,6 +3,8 @@
 A Java application that is a typing game implemented using the Trie data structure.
 This was an assignment for course CS1027B.
 
+*For Windows PCs Only*
+
 ## Setup
 
 1.  Create a new project and import into your favourite IDE (Eclipse, Netbeans, IntelliJ, etc.)
