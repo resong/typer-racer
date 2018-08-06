@@ -1,7 +1,7 @@
 # Typer Racer
 
 A Java application that is a typing game implemented using the Trie data structure.
-This was the final assignment for a beginner computer science class.
+This was an assignment for course CS1027B.
 
 ## Setup
 
