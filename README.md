@@ -13,3 +13,8 @@ This was an assignment for course CS1027B.
     - Under `Order and Export`, check off all the jars, and then apply and close
 3.  Clean and build the project
 4.  Run the project (or TypeRacer.java)
+
+## Screenshots
+
+![Image of Typer Racer loading screen](https://github.com/resong/typer-racer/blob/master/img/loading.png)
+![Image of Typer Racer game screen](https://github.com/resong/typer-racer/blob/master/img/game.png)
