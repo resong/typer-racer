@@ -38,7 +38,7 @@ import com.sun.j3d.utils.image.TextureLoader;
 
 /**
  * Loads and retrieves game textures
- * 
+ *
  * @author Jeff Shantz
  */
 public class TextureManager implements Runnable {
@@ -133,7 +133,7 @@ public class TextureManager implements Runnable {
 
 	/**
 	 * Creates a new TextureManager
-	 * 
+	 *
 	 * @param notifiable Object to notify as textures are being loaded
 	 */
 	private TextureManager(Notifiable notifiable) {
@@ -145,7 +145,7 @@ public class TextureManager implements Runnable {
 
 	/**
 	 * Returns an appearance object using a random texture of the specified type
-	 * 
+	 *
 	 * @param type The type of texture to apply to the appearance
 	 * @return An appearance object using a random texture of the specified type
 	 */
@@ -168,7 +168,7 @@ public class TextureManager implements Runnable {
 
 	/**
 	 * Returns a random texture of the specified type
-	 * 
+	 *
 	 * @param type The type of texture to retrieve
 	 * @return A random texture of the specified type
 	 */
@@ -208,7 +208,7 @@ public class TextureManager implements Runnable {
 
 	/**
 	 * Loads and returns a random texture object of the specified type
-	 * 
+	 *
 	 * @param type The type of texture to retrieve
 	 * @return A random texture object of the specified type
 	 */
@@ -261,7 +261,7 @@ public class TextureManager implements Runnable {
 	/**
 	 * Creates a new singleton TextureManager using the specified observer component
 	 * and notifiable object
-	 * 
+	 *
 	 * @param cmp        The observer component used for loading imges
 	 * @param notifiable The object to which loading updates will be provided
 	 */
@@ -278,7 +278,7 @@ public class TextureManager implements Runnable {
 
 	/**
 	 * Loads the specified image
-	 * 
+	 *
 	 * @param klazz    Class used to obtain the image resource
 	 * @param filename Name of the image file
 	 * @return An Image object loaded from the specified file
@@ -286,7 +286,6 @@ public class TextureManager implements Runnable {
 	 */
 	public static Image loadImage(Class klazz, String filename) throws Exception {
 
-		System.out.println(TEXTURES_PATH + "/" + filename);
 		URL url = klazz.getClassLoader().getResource(TEXTURES_PATH + "/" + filename);
 		return ImageIO.read(url);
 	}
@@ -294,7 +293,7 @@ public class TextureManager implements Runnable {
 	/**
 	 * Returns the singleton TextureManager object. Note that initialize() must be
 	 * called before this method.
-	 * 
+	 *
 	 * @return The TextureManager
 	 * @throws Exception If initialize() has not been called
 	 * @see TextureManager#initialize(java.awt.Component, TextureManager.Notifiable)
@@ -332,7 +331,7 @@ public class TextureManager implements Runnable {
 
 	/**
 	 * Gets the total number of textures of a given type
-	 * 
+	 *
 	 * @param textureCounts Texture count array
 	 * @return The total number of textures of a given type
 	 */
@@ -399,7 +398,7 @@ public class TextureManager implements Runnable {
 	/**
 	 * Loads all textures specified in the filename prefix array and stores them in
 	 * the specified texture array
-	 * 
+	 *
 	 * @param filenameArray Filename prefix array
 	 * @param countArray    Texture count array
 	 * @param textureArray  Array in which loaded textures should be stored
@@ -424,7 +423,7 @@ public class TextureManager implements Runnable {
 
 	/**
 	 * Loads and returns a single texture
-	 * 
+	 *
 	 * @param filename Filename of the texture to load
 	 * @return A texture loaded from the specified file
 	 */
@@ -446,14 +445,14 @@ public class TextureManager implements Runnable {
 	/**
 	 * Interface to be implemented by classes wishing to be received progress
 	 * updates as textures are loaded
-	 * 
+	 *
 	 * @author Jeff Shantz
 	 */
 	public interface Notifiable {
 
 		/**
 		 * Called when a new texture is being loaded
-		 * 
+		 *
 		 * @param status Message describing the texture being loaded
 		 */
 		public void notify(String status);
